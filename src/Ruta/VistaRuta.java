@@ -24,8 +24,8 @@ public class VistaRuta extends JFrame {
 	}
 	
 	
-	public void iniciarVista()
-	{
+	public void iniciarVista(){
+		
 		Container container = this.getContentPane();
 		
 		acomodar();
@@ -33,6 +33,9 @@ public class VistaRuta extends JFrame {
 		
 	}
 	
-	public void acomodar() {}
+	public void acomodar(){
+		
+		
+	}
 
 }

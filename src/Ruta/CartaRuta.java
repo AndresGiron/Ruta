@@ -7,11 +7,13 @@ public class CartaRuta extends ImageIcon {
 	//ImageIcon imagen;
 	private char tipo; 
 	private String id;
+	int valor;
 	
-	CartaRuta(char tipoGenerico, String idGenerico){
+	CartaRuta(char tipoGenerico, String idGenerico, int valorGenerico){
 		
 		tipo = tipoGenerico;
 		id = idGenerico;
+		valor = valorGenerico;
 		
 	}
 
@@ -29,6 +31,10 @@ public class CartaRuta extends ImageIcon {
 
 	public String getId() {
 		return id;
+	}
+	public int getValor() 
+	{
+		return valor;
 	}
 
 
