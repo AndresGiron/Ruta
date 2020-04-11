@@ -108,13 +108,19 @@ public class ControlRuta {
 		
 		for(int y = 0; y <numeroJugadores; y++ ){
 			
-			JugadorRuta generico = new JugadorRuta();
+			JugadorRuta jugadorGenerico = new JugadorRuta();
+			List<CartaRuta> manoGenerica = new ArrayList<CartaRuta>();
+			
 			
 			for(int z = 0; z < 7; z++) 
 			{
-				generico.getMano().add(ruta.get(0));
+				manoGenerica.add(ruta.get(0));
 				ruta.remove(0);
 			}
+			
+			jugadorGenerico.setMano(manoGenerica);
+			
+			jugadores.add(jugadorGenerico);
 			
 		}
 		

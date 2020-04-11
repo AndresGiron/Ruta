@@ -11,6 +11,7 @@ public class VistaRuta extends JFrame {
 	JPanel juego = new JPanel();
 	ControlRuta controlador = new ControlRuta(); 
 	
+	
 	public VistaRuta()
 	{
 		//iniciarVista();
@@ -34,6 +35,8 @@ public class VistaRuta extends JFrame {
 	}
 	
 	public void acomodar(){
+		
+		
 		
 		
 	}

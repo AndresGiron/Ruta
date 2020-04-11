@@ -3,7 +3,9 @@ package Ruta;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JugadorRuta {
+import javax.swing.JFrame;
+
+public class JugadorRuta extends JFrame{
 	
 	private List<CartaRuta> mano = new ArrayList<CartaRuta>();
 	private List<CartaRuta> mesa = new ArrayList<CartaRuta>();
