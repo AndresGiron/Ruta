@@ -1,8 +1,10 @@
 package Ruta;
 
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JLabel;
 
-public class CartaRuta extends ImageIcon {
+public class CartaRuta extends JButton {
 
 	//ImageIcon imagen;
 	private char tipo; 
@@ -14,6 +16,7 @@ public class CartaRuta extends ImageIcon {
 		tipo = tipoGenerico;
 		id = idGenerico;
 		valor = valorGenerico;
+		this.setIcon(new ImageIcon(id));
 		
 	}
 

@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
 public class ControlRuta {
 	
 	List<JugadorRuta> jugadores = new ArrayList<JugadorRuta>();
@@ -102,7 +105,7 @@ public class ControlRuta {
 	}
 	
 	
-	public void repatir(int x) {
+	public void repartir(int x) {
 		
 		numeroJugadores = x;
 		
@@ -111,12 +114,25 @@ public class ControlRuta {
 			JugadorRuta jugadorGenerico = new JugadorRuta();
 			List<CartaRuta> manoGenerica = new ArrayList<CartaRuta>();
 			
+			if (y>=1) {
+			
+				JLabel avatarGenerico = new JLabel();
+				
+				avatarGenerico.setIcon(new ImageIcon("src/imagenes/"+y+".jpg"));
+				
+				jugadorGenerico.setAvatar(avatarGenerico);
+				
+			}
+			
+			
 			
 			for(int z = 0; z < 7; z++) 
 			{
 				manoGenerica.add(ruta.get(0));
 				ruta.remove(0);
 			}
+			
+			
 			
 			jugadorGenerico.setMano(manoGenerica);
 			
