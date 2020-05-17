@@ -40,6 +40,10 @@ public class CartaRuta extends JButton {
 		return valor;
 	}
 
+	public void setValor(int valor) {
+		this.valor = valor;
+	}
+
 
 	
 	
